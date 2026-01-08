@@ -5,14 +5,14 @@
 }
 
 :root {
-    --primary-color: #2c3e50;
-    --secondary-color: #3498db;
-    --text-color: #333;
-    --light-text: #666;
+    --primary-color: #1a1a1a;
+    --secondary-color: #2563eb;
+    --text-color: #1f1f1f;
+    --light-text: #525252;
     --bg-color: #ffffff;
     --bg-secondary: #f8f9fa;
-    --border-color: #e9ecef;
-    --hover-color: #2980b9;
+    --border-color: #e5e5e5;
+    --hover-color: #1d4ed8;
 }
 
 html {
@@ -83,7 +83,7 @@ body {
 }
 
 .section {
-    padding: 4rem 0;
+    padding: 5rem 0;
     animation: fadeInUp 0.8s ease-out;
 }
 
@@ -94,8 +94,8 @@ body {
 }
 
 .profile-image {
-    width: 180px;
-    height: 180px;
+    width: 240px;
+    height: 240px;
     margin: 0 auto 1.5rem;
     border-radius: 50%;
     overflow: hidden;
@@ -116,10 +116,11 @@ body {
 }
 
 .name {
-    font-size: 2.5rem;
-    font-weight: 600;
+    font-size: 2.8rem;
+    font-weight: 700;
     color: var(--primary-color);
     margin-bottom: 0.5rem;
+    letter-spacing: -0.02em;
 }
 
 .tagline {
@@ -162,9 +163,11 @@ body {
 }
 
 .bio h2 {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
     color: var(--primary-color);
+    letter-spacing: -0.01em;
 }
 
 .bio p {
@@ -180,10 +183,12 @@ body {
 }
 
 #projects h2 {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
+    font-weight: 700;
     margin-bottom: 2rem;
     color: var(--primary-color);
     text-align: center;
+    letter-spacing: -0.01em;
 }
 
 .projects-grid {
@@ -245,9 +250,11 @@ body {
 }
 
 #contact h2 {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
     color: var(--primary-color);
+    letter-spacing: -0.01em;
 }
 
 .contact-text {
@@ -307,16 +314,25 @@ footer p {
     margin: 0 auto;
 }
 
+#publications h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+    text-align: center;
+    letter-spacing: -0.01em;
+}
+
 .publications-list {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1.5rem;
     margin-top: 2rem;
 }
 
 .publication-item {
     background-color: var(--bg-secondary);
-    padding: 2rem;
+    padding: 1.75rem;
     border-radius: 8px;
     border: 1px solid var(--border-color);
     transition: all 0.3s ease;
@@ -329,7 +345,8 @@ footer p {
 }
 
 .publication-item h3 {
-    font-size: 1.2rem;
+    font-size: 1.15rem;
+    font-weight: 600;
     margin-bottom: 0.5rem;
     color: var(--primary-color);
     line-height: 1.4;
@@ -384,10 +401,75 @@ footer p {
     color: var(--hover-color);
 }
 
-/* CV Section */
+/* Education & Positions Sections */
+#education, #positions {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#education h2, #positions h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+    text-align: center;
+    letter-spacing: -0.01em;
+}
+
+.timeline-item {
+    margin-bottom: 1.75rem;
+    padding-bottom: 1.75rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.timeline-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.timeline-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.timeline-date {
+    color: var(--secondary-color);
+    font-size: 0.95rem;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.timeline-title {
+    color: var(--primary-color);
+    font-size: 1.05rem;
+    flex: 1;
+}
+
+.timeline-detail {
+    color: var(--light-text);
+    font-size: 0.95rem;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* CV Section (kept for download button if needed) */
 #cv {
     max-width: 900px;
     margin: 0 auto;
+}
+
+#cv h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+    text-align: center;
+    letter-spacing: -0.01em;
 }
 
 .cv-container {
@@ -439,7 +521,8 @@ footer p {
 }
 
 .cv-section h3 {
-    font-size: 1.2rem;
+    font-size: 1.15rem;
+    font-weight: 600;
     margin-bottom: 1rem;
     color: var(--primary-color);
 }
