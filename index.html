@@ -24,7 +24,7 @@
         <section id="about" class="section">
             <div class="profile">
                 <div class="profile-image">
-                    <img src="profile.jpg" alt="Your Name">
+                    <img src="profile.png" alt="Yushi Yang">
                 </div>
                 <h1 class="name">Yushi Yang</h1>
                 <p class="tagline">AI Researcher | AI Engineer | PhD Candidate at Oxford</p>
@@ -83,12 +83,11 @@
                     </div>
                 </div>
                 <div class="publication-item">
-                    <h3>Agentic Reinforcement Learning for Search Is Unsafe</h3>
-                    <p class="publication-venue">ICLR 2026 (under review, 1st author)</p>
-                    <p>This paper demonstrates that training LLM search agents with reinforcement learning can lead to reward exploitation, reducing answer safety by 83%.</p>
+                    <h3>LLMs Don't Know Their Own Decision Boundaries: The Unreliability of Self-Generated Counterfactual Explanations</h3>
+                    <p class="publication-venue">EMNLP 2025 Main (3rd author)</p>
+                    <p>This paper reveals that large language models are unreliable at generating their own counterfactual explanations, highlighting fundamental limitations in LLM self-knowledge.</p>
                     <div class="publication-links">
                         <a href="#" target="_blank">Paper</a>
-                        <a href="#" target="_blank">GitHub</a>
                     </div>
                 </div>
                 <div class="publication-item">
@@ -100,12 +99,43 @@
                     </div>
                 </div>
                 <div class="publication-item">
+                    <h3>Agentic Reinforcement Learning for Search Is Unsafe</h3>
+                    <p class="publication-venue">ICLR 2026 (under review, 1st author)</p>
+                    <p>This paper demonstrates that training LLM search agents with reinforcement learning can lead to reward exploitation, reducing answer safety by 83%.</p>
+                    <div class="publication-links">
+                        <a href="#" target="_blank">Paper</a>
+                    </div>
+                </div>
+                <div class="publication-item">
+                    <h3>It's a TRAP! Task-Redirecting Agent Persuasion Benchmark for Web Agents</h3>
+                    <p class="publication-venue">ICLR 2026 (under review, 2nd author)</p>
+                    <p>This paper introduces a benchmark for evaluating how web agents handle persuasive attempts to redirect them from their assigned tasks.</p>
+                    <div class="publication-links">
+                        <a href="#" target="_blank">Paper</a>
+                    </div>
+                </div>
+                <div class="publication-item">
                     <h3>Evaluating Fine-Tuning Efficiency of Human-Inspired Learning Strategies in Medical Question Answering</h3>
                     <p class="publication-venue">NeurIPS 2024 Workshop (1st author)</p>
                     <p>This paper evaluates how human-inspired learning strategies can improve fine-tuning efficiency for medical AI applications.</p>
                     <div class="publication-links">
                         <a href="#" target="_blank">Paper</a>
-                        <a href="#" target="_blank">GitHub</a>
+                    </div>
+                </div>
+                <div class="publication-item">
+                    <h3>Can Sparse Autoencoders Be Used to Decompose and Interpret Steering Vectors?</h3>
+                    <p class="publication-venue">NeurIPS 2024 Workshop (2nd author)</p>
+                    <p>This paper explores whether sparse autoencoders can effectively decompose and interpret steering vectors in language models for better interpretability.</p>
+                    <div class="publication-links">
+                        <a href="#" target="_blank">Paper</a>
+                    </div>
+                </div>
+                <div class="publication-item">
+                    <h3>Robust LLM Unlearning with MUDMAN: Meta-Unlearning with Disruption Masking And Normalization</h3>
+                    <p class="publication-venue">NeurIPS 2025 Workshop (2nd author)</p>
+                    <p>This paper presents MUDMAN, a robust method for unlearning sensitive information from large language models while maintaining model performance.</p>
+                    <div class="publication-links">
+                        <a href="#" target="_blank">Paper</a>
                     </div>
                 </div>
             </div>
@@ -117,6 +147,27 @@
         <section id="projects" class="section">
             <h2>Projects</h2>
             <div class="projects-grid">
+                <div class="project-card">
+                    <h3>LLM Post-training Research</h3>
+                    <p>Created a PyTorch DPO pipeline with 62% toxicity reduction on four LLMs and a neuron-editing method that replicates DPO effects. Trained PPO and GRPO-based LLM search agents.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/Yushi-Y/dpo-toxic" target="_blank">GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Privacy-Preserving Recommender System</h3>
+                    <p>Adapted backend JavaScript for a movie-recommendation web app on Solid (Tim Berners-Lee's decentralised platform) and integrated collaborative filtering with Locality Sensitive Hashing.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/Yushi-Y/solid-recommender" target="_blank">GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Multimodal Emotion Analysis for Artworks</h3>
+                    <p>Developed a TensorFlow concept extraction pipeline for a visual-language model to interpret classified sentiments to artworks. Processed 80k image-text pairs on Slurm GPUs.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/Yushi-Y/art-emotion" target="_blank">GitHub</a>
+                    </div>
+                </div>
                 <div class="project-card">
                     <h3>GPT-2 from Scratch</h3>
                     <p>Built GPT-2 from scratch in PyTorch to generate Shakespearean text, demonstrating deep understanding of transformer architectures and language modeling.</p>
@@ -142,7 +193,7 @@
         </section>
 
         <section id="cv" class="section">
-            <h2>Curriculum Vitae</h2>
+            <h2>CV</h2>
             <div class="cv-container">
                 <div class="cv-preview">
                     <p>Download my full CV to learn more about my education, research experience, and technical skills.</p>
@@ -159,12 +210,19 @@
                         </ul>
                     </div>
                     <div class="cv-section">
-                        <h3>Research Focus</h3>
+                        <h3>Work Experience</h3>
                         <ul>
-                            <li>LLM Post-training (LoRA, SFT, DPO, PPO, GRPO)</li>
-                            <li>LLM Agents & Agentic Systems</li>
-                            <li>Technical AI Safety</li>
-                            <li>Mechanistic Interpretability</li>
+                            <li><strong>AI Engineer (Part-time)</strong> - Reply (May 2025-Present)</li>
+                            <li><strong>Data Analyst Intern</strong> - United Nations Development Programme (Nov 2022-Apr 2023)</li>
+                            <li><strong>AI Engineer (MSc Project)</strong> - The Trade Desk & Imperial College London (Mar 2022-May 2022)</li>
+                        </ul>
+                    </div>
+                    <div class="cv-section">
+                        <h3>Research Experience</h3>
+                        <ul>
+                            <li><strong>LLM Post-training Researcher</strong> - Oxford Reasoning with Machines Lab (June 2024-Present)</li>
+                            <li><strong>Recommender System Developer</strong> - Oxford Human-Centred Computing Group (July 2023-Sep 2023)</li>
+                            <li><strong>Multimodal AI Researcher</strong> - Imperial College London (July 2022-Sep 2022)</li>
                         </ul>
                     </div>
                     <div class="cv-section">
