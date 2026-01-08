@@ -177,7 +177,6 @@ body {
     font-weight: 400;
     color: #ff69b4;
     font-style: italic;
-    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', cursive;
     transition: opacity 0.3s ease;
 }
 
@@ -415,7 +414,7 @@ body {
 .pub-button {
     font-size: 16px;
     color: #ffffff;
-    background-color: #808080;
+    background-color: var(--link-color);
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 6px;
@@ -426,8 +425,16 @@ body {
 }
 
 .pub-button:hover {
-    background-color: #666666;
+    background-color: var(--link-hover);
     transform: translateY(-2px);
+}
+
+.pub-button.pdf {
+    background-color: #808080;
+}
+
+.pub-button.pdf:hover {
+    background-color: #666666;
 }
 
 .pub-button.github {
