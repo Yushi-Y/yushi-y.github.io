@@ -124,7 +124,7 @@ body {
 
 /* Name */
 .name {
-    font-size: 52px;
+    font-size: 44px;
     font-weight: 600;
     color: var(--text-color);
     margin-bottom: 20px;
@@ -334,17 +334,17 @@ body {
 }
 
 .publication-title {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 500;
     color: var(--text-color);
-    margin-bottom: 8px;
+    margin-bottom: 4px;
     line-height: 1.5;
     display: block;
 }
 
 .publication-venue {
-    font-size: 18px;
-    color: #1e40af;
+    font-size: 21px;
+    color: var(--light-text);
     font-weight: 400;
     margin-bottom: 0;
     display: block;
@@ -367,7 +367,7 @@ body {
 .pub-button {
     font-size: 16px;
     color: #ffffff;
-    background-color: #6b9fff;
+    background-color: #2563eb;
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 6px;
@@ -378,7 +378,7 @@ body {
 }
 
 .pub-button:hover {
-    background-color: #5a8eef;
+    background-color: #1d4ed8;
     transform: translateY(-2px);
 }
 
