@@ -368,7 +368,7 @@ body {
 
 .publication-description {
     font-size: 19px;
-    color: var(--link-color);
+    color: #ff8c42;
     line-height: 1.6;
     margin-top: 8px;
     font-style: italic;
