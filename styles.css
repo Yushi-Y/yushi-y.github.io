@@ -5,11 +5,11 @@
 }
 
 :root {
-    --bg-color: #f5f1e8;
-    --text-color: #2d2d2d;
-    --light-text: #666666;
-    --link-color: #8b7355;
-    --link-hover: #6b5844;
+    --bg-color: #fafafa;
+    --text-color: #1a1a1a;
+    --light-text: #555555;
+    --link-color: #2563eb;
+    --link-hover: #1d4ed8;
 }
 
 html {
@@ -18,10 +18,10 @@ html {
 
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    line-height: 1.6;
+    line-height: 1.7;
     color: var(--text-color);
     background-color: var(--bg-color);
-    font-size: 16px;
+    font-size: 17px;
     padding-top: 80px;
     padding-bottom: 60px;
 }
@@ -39,7 +39,7 @@ body {
 }
 
 .nav-content {
-    max-width: 700px;
+    max-width: 900px;
     margin: 0 auto;
     padding: 0 40px;
     display: flex;
@@ -81,7 +81,7 @@ body {
 
 /* Container */
 .container {
-    max-width: 700px;
+    max-width: 900px;
     margin: 0 auto;
     padding: 0 40px;
 }
@@ -103,7 +103,7 @@ body {
 
 /* Name */
 .name {
-    font-size: 32px;
+    font-size: 36px;
     font-weight: 600;
     color: var(--text-color);
     margin-bottom: 20px;
@@ -135,17 +135,17 @@ body {
 }
 
 .section h2 {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 600;
     color: var(--text-color);
-    margin-bottom: 25px;
+    margin-bottom: 30px;
     letter-spacing: -0.01em;
 }
 
 /* Intro Text */
 .intro-text {
-    font-size: 16px;
-    line-height: 1.7;
+    font-size: 17px;
+    line-height: 1.8;
     color: var(--text-color);
     margin-bottom: 0;
 }
@@ -162,33 +162,95 @@ body {
 
 /* Timeline Items (for Education and Positions) */
 .timeline-item {
-    margin-bottom: 30px;
+    display: flex;
+    gap: 20px;
+    margin-bottom: 35px;
+    align-items: flex-start;
 }
 
 .timeline-item:last-child {
     margin-bottom: 0;
 }
 
+.timeline-logo {
+    flex-shrink: 0;
+    width: 56px;
+    height: 56px;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #ffffff;
+    border: 1px solid #e5e5e5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+}
+
+.timeline-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.timeline-content {
+    flex: 1;
+}
+
 .timeline-date {
-    font-size: 14px;
+    font-size: 15px;
     color: var(--light-text);
-    margin-bottom: 5px;
+    margin-bottom: 6px;
     display: block;
 }
 
 .timeline-title {
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 500;
     color: var(--text-color);
-    margin-bottom: 3px;
+    margin-bottom: 4px;
     display: block;
 }
 
 .timeline-detail {
-    font-size: 15px;
+    font-size: 16px;
     color: var(--light-text);
     margin: 0;
-    line-height: 1.5;
+    line-height: 1.6;
+}
+
+/* Award Items (no logos) */
+.award-item {
+    margin-bottom: 30px;
+}
+
+.award-item:last-child {
+    margin-bottom: 0;
+}
+
+.award-item .timeline-date,
+.award-item .timeline-title,
+.award-item .timeline-detail {
+    display: block;
+}
+
+.award-item .timeline-date {
+    font-size: 15px;
+    color: var(--light-text);
+    margin-bottom: 6px;
+}
+
+.award-item .timeline-title {
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--text-color);
+    margin-bottom: 4px;
+}
+
+.award-item .timeline-detail {
+    font-size: 16px;
+    color: var(--light-text);
+    margin: 0;
+    line-height: 1.6;
 }
 
 /* Publication Items */
@@ -205,34 +267,34 @@ body {
 }
 
 .publication-date {
-    font-size: 13px;
+    font-size: 14px;
     color: var(--light-text);
     margin-bottom: 8px;
     display: block;
 }
 
 .publication-title {
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 500;
     color: var(--text-color);
-    margin-bottom: 5px;
-    line-height: 1.4;
+    margin-bottom: 6px;
+    line-height: 1.5;
     display: block;
 }
 
 .publication-venue {
-    font-size: 14px;
+    font-size: 15px;
     color: var(--light-text);
     font-style: italic;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     display: block;
 }
 
 .publication-description {
-    font-size: 15px;
+    font-size: 16px;
     color: var(--light-text);
-    line-height: 1.6;
-    margin-bottom: 10px;
+    line-height: 1.7;
+    margin-bottom: 12px;
 }
 
 .publication-links {
@@ -258,7 +320,7 @@ footer {
     padding-top: 30px;
     border-top: 1px solid rgba(45, 45, 45, 0.1);
     text-align: left;
-    max-width: 700px;
+    max-width: 900px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 40px;
