@@ -314,11 +314,20 @@ body {
     margin-bottom: 35px;
     padding-bottom: 35px;
     border-bottom: 1px solid rgba(45, 45, 45, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+}
+
+.publication-item:hover {
+    background-color: rgba(37, 99, 235, 0.05);
+    transform: translateX(5px);
 }
 
 .publication-item:last-child {
     border-bottom: none;
-    padding-bottom: 0;
+    padding-bottom: 15px;
     margin-bottom: 0;
 }
 
@@ -358,10 +367,21 @@ body {
 }
 
 .publication-description {
-    font-size: 18px;
-    color: var(--light-text);
-    line-height: 1.7;
-    margin-bottom: 12px;
+    font-size: 19px;
+    color: var(--link-color);
+    line-height: 1.6;
+    margin-top: 8px;
+    font-style: italic;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.3s ease, max-height 0.3s ease, margin-top 0.3s ease;
+}
+
+.publication-item:hover .publication-description {
+    opacity: 1;
+    max-height: 100px;
+    margin-top: 8px;
 }
 
 .publication-links {
