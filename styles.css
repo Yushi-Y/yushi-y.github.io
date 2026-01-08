@@ -164,6 +164,13 @@ body {
     letter-spacing: -0.01em;
 }
 
+.section-intro {
+    font-size: 20px;
+    line-height: 1.7;
+    color: var(--light-text);
+    margin-bottom: 30px;
+}
+
 /* Intro Text */
 .intro-text {
     font-size: 22px;
@@ -380,6 +387,14 @@ body {
 .pub-button:hover {
     background-color: var(--link-hover);
     transform: translateY(-2px);
+}
+
+.pub-button.github {
+    background-color: #ff8c42;
+}
+
+.pub-button.github:hover {
+    background-color: #ff7829;
 }
 
 /* Footer */
