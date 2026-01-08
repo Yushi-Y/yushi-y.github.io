@@ -94,8 +94,8 @@ body {
 }
 
 .profile-image {
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 180px;
     margin: 0 auto 1.5rem;
     border-radius: 50%;
     overflow: hidden;
@@ -174,6 +174,11 @@ body {
 }
 
 /* Projects Section */
+#projects {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
 #projects h2 {
     font-size: 1.8rem;
     margin-bottom: 2rem;
@@ -234,6 +239,8 @@ body {
 
 /* Contact Section */
 #contact {
+    max-width: 900px;
+    margin: 0 auto;
     text-align: center;
 }
 
@@ -295,6 +302,11 @@ footer p {
 }
 
 /* Publications Section */
+#publications {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
 .publications-list {
     display: flex;
     flex-direction: column;
@@ -373,6 +385,11 @@ footer p {
 }
 
 /* CV Section */
+#cv {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
 .cv-container {
     margin-top: 2rem;
 }
