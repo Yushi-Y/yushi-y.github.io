@@ -162,6 +162,27 @@ body {
     color: var(--text-color);
     margin-bottom: 30px;
     letter-spacing: -0.01em;
+    position: relative;
+    display: inline-block;
+}
+
+.section-title {
+    display: inline-block;
+}
+
+.section-hint {
+    opacity: 0;
+    margin-left: 15px;
+    font-size: 24px;
+    font-weight: 400;
+    color: #ff69b4;
+    font-style: italic;
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', cursive;
+    transition: opacity 0.3s ease;
+}
+
+.section h2:hover .section-hint {
+    opacity: 1;
 }
 
 .section-intro {
@@ -394,7 +415,7 @@ body {
 .pub-button {
     font-size: 16px;
     color: #ffffff;
-    background-color: var(--link-color);
+    background-color: #808080;
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 6px;
@@ -405,7 +426,7 @@ body {
 }
 
 .pub-button:hover {
-    background-color: var(--link-hover);
+    background-color: #666666;
     transform: translateY(-2px);
 }
 
