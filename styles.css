@@ -21,8 +21,8 @@ body {
     line-height: 1.7;
     color: var(--text-color);
     background-color: var(--bg-color);
-    font-size: 20px;
-    padding-top: 80px;
+    font-size: 22px;
+    padding-top: 90px;
     padding-bottom: 60px;
 }
 
@@ -34,7 +34,7 @@ body {
     right: 0;
     background-color: var(--bg-color);
     border-bottom: 1px solid rgba(45, 45, 45, 0.1);
-    padding: 20px 0;
+    padding: 25px 0;
     z-index: 1000;
 }
 
@@ -55,7 +55,7 @@ body {
 .nav-links a {
     color: var(--text-color);
     text-decoration: none;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 400;
     transition: color 0.2s ease;
 }
@@ -67,10 +67,10 @@ body {
 .cv-button {
     background-color: var(--text-color);
     color: var(--bg-color);
-    padding: 8px 18px;
-    border-radius: 4px;
+    padding: 12px 24px;
+    border-radius: 6px;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 500;
     transition: background-color 0.2s ease;
 }
@@ -103,7 +103,7 @@ body {
 
 /* Name */
 .name {
-    font-size: 48px;
+    font-size: 52px;
     font-weight: 600;
     color: var(--text-color);
     margin-bottom: 20px;
@@ -137,7 +137,7 @@ body {
 }
 
 .section h2 {
-    font-size: 32px;
+    font-size: 36px;
     font-weight: 600;
     color: var(--text-color);
     margin-bottom: 30px;
@@ -146,7 +146,7 @@ body {
 
 /* Intro Text */
 .intro-text {
-    font-size: 20px;
+    font-size: 22px;
     line-height: 1.8;
     color: var(--text-color);
     margin-bottom: 0;
@@ -208,14 +208,14 @@ body {
 }
 
 .timeline-date {
-    font-size: 18px;
+    font-size: 20px;
     color: var(--light-text);
     margin-bottom: 6px;
     display: block;
 }
 
 .timeline-title {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 500;
     color: var(--text-color);
     margin-bottom: 4px;
@@ -223,14 +223,14 @@ body {
 }
 
 .timeline-detail {
-    font-size: 19px;
+    font-size: 21px;
     color: var(--light-text);
     margin: 0;
     line-height: 1.6;
 }
 
 .timeline-description {
-    font-size: 17px;
+    font-size: 19px;
     color: var(--link-color);
     margin-top: 8px;
     line-height: 1.6;
@@ -263,20 +263,20 @@ body {
 }
 
 .award-item .timeline-date {
-    font-size: 18px;
+    font-size: 20px;
     color: var(--light-text);
     margin-bottom: 6px;
 }
 
 .award-item .timeline-title {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 500;
     color: var(--text-color);
     margin-bottom: 4px;
 }
 
 .award-item .timeline-detail {
-    font-size: 19px;
+    font-size: 21px;
     color: var(--light-text);
     margin: 0;
     line-height: 1.6;
@@ -295,27 +295,38 @@ body {
     margin-bottom: 0;
 }
 
+.publication-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.publication-info {
+    flex: 1;
+}
+
 .publication-date {
-    font-size: 18px;
+    font-size: 20px;
     color: var(--light-text);
     margin-bottom: 8px;
     display: block;
 }
 
 .publication-title {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 500;
     color: var(--text-color);
-    margin-bottom: 6px;
+    margin-bottom: 8px;
     line-height: 1.5;
     display: block;
 }
 
 .publication-venue {
-    font-size: 18px;
-    color: var(--light-text);
-    font-style: italic;
-    margin-bottom: 10px;
+    font-size: 22px;
+    color: var(--text-color);
+    font-weight: 600;
+    margin-bottom: 0;
     display: block;
 }
 
@@ -328,19 +339,27 @@ body {
 
 .publication-links {
     display: flex;
-    gap: 15px;
-    margin-top: 10px;
+    flex-direction: column;
+    gap: 10px;
+    flex-shrink: 0;
 }
 
-.publication-links a {
-    font-size: 16px;
-    color: var(--link-color);
+.pub-button {
+    font-size: 18px;
+    color: var(--bg-color);
+    background-color: var(--link-color);
     text-decoration: none;
-    transition: color 0.2s ease;
+    padding: 12px 24px;
+    border-radius: 6px;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    text-align: center;
+    font-weight: 500;
+    min-width: 110px;
 }
 
-.publication-links a:hover {
-    color: var(--link-hover);
+.pub-button:hover {
+    background-color: var(--link-hover);
+    transform: translateY(-2px);
 }
 
 /* Footer */
@@ -358,7 +377,7 @@ footer {
 
 footer p {
     color: var(--light-text);
-    font-size: 16px;
+    font-size: 18px;
 }
 
 /* Responsive Design */
