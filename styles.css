@@ -359,9 +359,29 @@ body {
 
 .publication-main {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: flex-start;
-    gap: 20px;
+    gap: 24px;
+}
+
+.publication-tags {
+    flex-shrink: 0;
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.pub-tag {
+    font-family: 'Fredoka', 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    color: #2563eb;
+    background-color: rgba(37, 99, 235, 0.08);
+    border: 1px solid rgba(37, 99, 235, 0.2);
+    padding: 6px 12px;
+    border-radius: 6px;
+    text-align: center;
 }
 
 .publication-info {
@@ -510,6 +530,17 @@ footer p {
     .profile-photo {
         width: 220px;
         height: 220px;
+    }
+
+    .publication-main {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .publication-tags {
+        width: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 }
 
