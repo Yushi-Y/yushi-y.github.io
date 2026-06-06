@@ -376,12 +376,52 @@ body {
     font-family: 'Fredoka', 'Inter', sans-serif;
     font-size: 15px;
     font-weight: 500;
-    color: #2563eb;
-    background-color: rgba(37, 99, 235, 0.08);
-    border: 1px solid rgba(37, 99, 235, 0.2);
     padding: 6px 12px;
     border-radius: 6px;
     text-align: center;
+}
+
+/* Category colours (similar categories share a colour) */
+.pub-tag.tag-agents {
+    color: #7c3aed;
+    background-color: rgba(124, 58, 237, 0.08);
+    border: 1px solid rgba(124, 58, 237, 0.25);
+}
+
+.pub-tag.tag-posttrain {
+    color: #2563eb;
+    background-color: rgba(37, 99, 235, 0.08);
+    border: 1px solid rgba(37, 99, 235, 0.25);
+}
+
+.pub-tag.tag-eval {
+    color: #b45309;
+    background-color: rgba(180, 83, 9, 0.08);
+    border: 1px solid rgba(180, 83, 9, 0.25);
+}
+
+.pub-tag.tag-align {
+    color: #db2777;
+    background-color: rgba(219, 39, 119, 0.08);
+    border: 1px solid rgba(219, 39, 119, 0.25);
+}
+
+.pub-tag.tag-reasoning {
+    color: #0891b2;
+    background-color: rgba(8, 145, 178, 0.08);
+    border: 1px solid rgba(8, 145, 178, 0.25);
+}
+
+.pub-tag.tag-removal {
+    color: #dc2626;
+    background-color: rgba(220, 38, 38, 0.08);
+    border: 1px solid rgba(220, 38, 38, 0.25);
+}
+
+.pub-tag.tag-domain {
+    color: #64748b;
+    background-color: rgba(100, 116, 139, 0.08);
+    border: 1px solid rgba(100, 116, 139, 0.25);
 }
 
 .publication-info {
@@ -407,7 +447,7 @@ body {
 .publication-venue {
     font-family: 'Fredoka', 'Inter', sans-serif;
     font-size: 23px;
-    color: var(--light-text);
+    color: #16a34a;
     font-weight: 400;
     margin-bottom: 0;
     display: block;
