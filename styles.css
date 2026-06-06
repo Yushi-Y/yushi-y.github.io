@@ -477,6 +477,14 @@ body {
     width: 90%;
 }
 
+.publication-figure.figure-85 {
+    width: 85%;
+}
+
+.publication-figure.figure-95 {
+    width: 95%;
+}
+
 .publication-links {
     display: flex;
     flex-direction: column;
