@@ -423,13 +423,21 @@ body {
 
 .publication-venue {
     font-family: 'Fredoka', 'Inter', sans-serif;
-    font-size: 18px;
+    font-size: 20px;
     color: #16a34a;
     font-weight: 400;
     line-height: 1.4;
     flex-shrink: 0;
     width: 200px;
     margin: 0;
+}
+
+.venue-box {
+    display: inline-block;
+    border: 1px solid #16a34a;
+    border-radius: 6px;
+    padding: 6px 12px;
+    text-align: center;
 }
 
 .publication-description {
