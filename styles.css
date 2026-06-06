@@ -179,9 +179,9 @@ body {
 }
 
 .section-hint {
-    opacity: 0;
+    opacity: 1;
     margin-left: 15px;
-    font-size: 24px;
+    font-size: 27px;
     font-weight: 400;
     color: #ff69b4;
     font-style: italic;
@@ -275,18 +275,6 @@ body {
     color: var(--text-color);
     margin-bottom: 4px;
     display: block;
-}
-
-.timeline-title a {
-    color: inherit;
-    text-decoration: none;
-    border-bottom: 1px solid rgba(37, 99, 235, 0.4);
-    transition: color 0.2s ease, border-color 0.2s ease;
-}
-
-.timeline-title a:hover {
-    color: var(--link-color);
-    border-color: var(--link-color);
 }
 
 .timeline-detail {
