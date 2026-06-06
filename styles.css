@@ -154,6 +154,11 @@ body {
     color: var(--text-color);
 }
 
+.social-links a svg {
+    width: 34px;
+    height: 34px;
+}
+
 /* Section */
 .section {
     margin-bottom: 50px;
