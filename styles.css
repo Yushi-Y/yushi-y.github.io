@@ -104,7 +104,10 @@ body {
 .summary-section {
     flex: 1;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 /* Profile Photo */
@@ -277,11 +280,11 @@ body {
 }
 
 .timeline-description {
+    font-family: 'Fredoka', 'Inter', sans-serif;
     font-size: 19px;
-    color: var(--link-color);
+    color: #6ba3f0;
     margin-top: 8px;
     line-height: 1.6;
-    font-style: italic;
     opacity: 0;
     max-height: 0;
     overflow: hidden;
