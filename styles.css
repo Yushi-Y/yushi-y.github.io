@@ -374,11 +374,11 @@ body {
 
 .pub-tag {
     font-family: 'Fredoka', 'Inter', sans-serif;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 500;
     color: #2563eb;
-    background-color: rgba(37, 99, 235, 0.08);
-    border: 1px solid rgba(37, 99, 235, 0.25);
+    background-color: transparent;
+    border: 1px solid rgba(37, 99, 235, 0.35);
     padding: 6px 12px;
     border-radius: 6px;
     text-align: center;
@@ -424,7 +424,6 @@ body {
     flex-shrink: 0;
     width: 200px;
     margin: 0;
-    text-align: right;
 }
 
 .publication-description {
