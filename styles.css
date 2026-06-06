@@ -365,67 +365,39 @@ body {
 }
 
 .publication-tags {
-    flex-shrink: 0;
-    width: 180px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 8px;
+    margin-top: 8px;
 }
 
 .pub-tag {
     font-family: 'Fredoka', 'Inter', sans-serif;
     font-size: 15px;
     font-weight: 500;
+    color: #2563eb;
+    background-color: rgba(37, 99, 235, 0.08);
+    border: 1px solid rgba(37, 99, 235, 0.25);
     padding: 6px 12px;
     border-radius: 6px;
     text-align: center;
 }
 
-/* Category colours (similar categories share a colour) */
-.pub-tag.tag-agents {
-    color: #7c3aed;
-    background-color: rgba(124, 58, 237, 0.08);
-    border: 1px solid rgba(124, 58, 237, 0.25);
-}
-
-.pub-tag.tag-posttrain {
-    color: #2563eb;
-    background-color: rgba(37, 99, 235, 0.08);
-    border: 1px solid rgba(37, 99, 235, 0.25);
-}
-
-.pub-tag.tag-eval {
-    color: #b45309;
-    background-color: rgba(180, 83, 9, 0.08);
-    border: 1px solid rgba(180, 83, 9, 0.25);
-}
-
-.pub-tag.tag-align {
-    color: #db2777;
-    background-color: rgba(219, 39, 119, 0.08);
-    border: 1px solid rgba(219, 39, 119, 0.25);
-}
-
-.pub-tag.tag-reasoning {
-    color: #0891b2;
-    background-color: rgba(8, 145, 178, 0.08);
-    border: 1px solid rgba(8, 145, 178, 0.25);
-}
-
-.pub-tag.tag-removal {
-    color: #dc2626;
-    background-color: rgba(220, 38, 38, 0.08);
-    border: 1px solid rgba(220, 38, 38, 0.25);
-}
-
-.pub-tag.tag-domain {
-    color: #64748b;
-    background-color: rgba(100, 116, 139, 0.08);
-    border: 1px solid rgba(100, 116, 139, 0.25);
-}
-
 .publication-info {
     flex: 1;
+}
+
+.publication-authors {
+    font-size: 17px;
+    color: var(--light-text);
+    margin-top: 6px;
+    line-height: 1.5;
+}
+
+.publication-authors strong {
+    color: var(--text-color);
+    font-weight: 600;
 }
 
 .publication-date {
@@ -446,11 +418,12 @@ body {
 
 .publication-venue {
     font-family: 'Fredoka', 'Inter', sans-serif;
-    font-size: 23px;
+    font-size: 21px;
     color: #16a34a;
     font-weight: 400;
-    margin-bottom: 0;
-    display: block;
+    flex-shrink: 0;
+    width: 200px;
+    margin: 0;
 }
 
 .publication-description {
@@ -574,13 +547,11 @@ footer p {
 
     .publication-main {
         flex-direction: column;
-        gap: 10px;
+        gap: 6px;
     }
 
-    .publication-tags {
+    .publication-venue {
         width: auto;
-        flex-direction: row;
-        flex-wrap: wrap;
     }
 }
 
