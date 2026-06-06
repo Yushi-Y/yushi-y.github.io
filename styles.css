@@ -183,7 +183,7 @@ body {
     margin-left: 15px;
     font-size: 25px;
     font-weight: 400;
-    color: #ff8c42;
+    color: #ff69b4;
     font-style: italic;
     transition: opacity 0.3s ease;
 }
@@ -439,7 +439,7 @@ body {
 
 .publication-description {
     font-size: 19px;
-    color: #444444;
+    color: #ff8c42;
     line-height: 1.6;
     margin-top: 8px;
     font-style: italic;
