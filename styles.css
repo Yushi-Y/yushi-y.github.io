@@ -444,6 +444,24 @@ body {
     margin-top: 8px;
 }
 
+.publication-figure {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    opacity: 0;
+    max-height: 0;
+    margin-top: 0;
+    overflow: hidden;
+    transition: opacity 0.3s ease, max-height 0.4s ease, margin-top 0.3s ease;
+}
+
+.publication-item:hover .publication-figure {
+    opacity: 1;
+    max-height: 2000px;
+    margin-top: 16px;
+}
+
 .publication-links {
     display: flex;
     flex-direction: column;
