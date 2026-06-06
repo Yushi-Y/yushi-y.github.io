@@ -485,6 +485,10 @@ body {
     margin-top: 16px;
 }
 
+.publication-figure.figure-90 {
+    width: 90%;
+}
+
 .publication-links {
     display: flex;
     flex-direction: column;
